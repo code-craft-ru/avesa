@@ -1,0 +1,40 @@
+.btn
+    display: inline-block
+    box-sizing: border-box
+    vertical-align: middle
+    text-align: center
+    cursor: pointer
+    background: transparent
+    text-decoration: none
+    position: relative
+    user-select: none
+    transition: $sp-fast
+
+    font-size: inherit
+    padding: 0
+
+    
+    & > SPAN
+        border-bottom: 1px solid transparent
+        padding: 0 0 2px 0 
+        transition: border-color $sp-fast
+        
+    &:hover
+        & > SPAN
+            border-color: transparent
+
+    &--primary
+        font-size: 20px
+        font-weight: bold
+        color: #fff
+        background: $cCrimson
+        padding: 24px 38px
+        letter-spacing: 1.4px
+        text-transform: uppercase
+        border-radius: 3px
+
+
+    /* sizes */
+
+    /* colors */
+

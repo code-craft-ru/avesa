@@ -1,0 +1,74 @@
+
+// ----------------------------------------------------------------------
+// Example:
+// .page.page-****
+//    .page-inner
+//        .header
+//        .page-body
+//        .footer
+//     popups, sidemenus, other stuff
+// ----------------------------------------------------------------------
+
+.page-wrap
+
+
+.page
+    position: relative
+    z-index: 1
+
+
+.page-body
+    padding-top: 109px
+
+    +max-screen($screenMD_xs)
+        padding-top: 85px
+
+
+=wrapper-padd
+    padding: 0 $wrapperM-padd
+    +max-screen($screenSM_xl)
+        padding-left: $wrapperS-padd
+        padding-right: $wrapperS-padd
+
+    +max-screen($screenSM_xs)
+        padding-right: $wrapperSS-padd
+        padding-left: $wrapperSS-padd
+
+=wrapper-minus-margin
+    margin-left: -$wrapperM-padd
+    margin-right: -$wrapperM-padd
+
+    +max-screen($screenSM_xs)
+        margin-left: -$wrapperS-padd
+        margin-right: -$wrapperS-padd
+
+    +max-screen($screenSM_xs)
+        margin-left: -$wrapperSS-padd
+        margin-right: -$wrapperSS-padd
+
+.wrapper
+    position: relative
+    margin: 0 auto
+    max-width: $maxW
+    min-width: $minW
+
+
+    &--12
+        max-width: 1260px
+    &--109
+        max-width: 1150px
+    &--97
+        max-width: 1030px
+    &--10
+        max-width: 1060px
+    &--108
+        max-width: 1140px
+
+    +wrapper-padd
+
+.wrapper-inner
+    display: block
+    width: auto
+
+    +wrapper-minus-margin
+

@@ -1,0 +1,73 @@
+.input
+	border-radius: 7px
+	overflow: hidden
+	position: relative
+	input
+		border-radius: 7px
+		width: 100%
+		padding: 17px 25px
+		font-size: 20px
+		font-weight: 100
+		color: #000
+		background: #fff
+		&::placeholder
+			color: #8d8d8d
+			font-size: 20px
+			font-weight: 100
+	&.error
+		input
+			border: 2px solid $cCrimson
+			color: $cCrimson
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 23px
+			height: 21px
+			background: url(../images/error.png) no-repeat 0 0
+			right: 23px
+			top: 50%
+			margin-top: -10px
+
+	&.success
+		input
+			border: 2px solid #16a63b
+			color: #16a63b
+
+.textarea
+	border-radius: 7px
+	overflow: hidden
+	position: relative
+	textarea
+		border-radius: 7px
+		width: 100%
+		padding: 24px 25px
+		font-size: 20px
+		font-weight: 100
+		color: #000
+		background: #fff
+		&::placeholder
+			color: #8d8d8d
+			font-size: 20px
+			font-weight: 100
+	&.error
+		textarea
+			border: 2px solid $cCrimson
+			color: $cCrimson
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 23px
+			height: 21px
+			background: url(../images/error.png) no-repeat 0 0
+			right: 23px
+			top: 50%
+			margin-top: -10px
+
+	&.success
+		textarea
+			border: 2px solid #16a63b
+			color: #16a63b

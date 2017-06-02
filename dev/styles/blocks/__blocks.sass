@@ -1,0 +1,42 @@
+.accordion
+	overflow: hidden
+	&__title
+		position: relative
+		p
+			font-weight: 100
+			font-size: 24px
+			color: $cCrimson
+			text-align: left
+			padding: 15px 0 15px 23px
+			transition: all 0.4s
+			cursor: pointer
+			border-radius: 5px
+			&:hover
+				background: #f5f5f5
+
+		.icon
+			position: absolute
+			right: 35px
+			top: 50%
+			margin-top: -5px
+			transition: all 0.4s
+
+	&__content
+		display: none
+		padding: 23px 29px 35px
+		font-size: 20px
+		color: #222222
+		font-weight: normal
+		border-bottom: 1px solid $cCrimson
+		line-height: 34px
+		
+	&__item
+		&._open
+			.accordion
+				&__title
+					&:hover
+						background: transparent
+					.icon
+						transform: rotate(180deg)
+				&__content
+					display: block

@@ -1,0 +1,23 @@
+.form
+
+	&__row
+		margin: 0 0 32px
+		@extend .cf
+
+	&__col
+		width: 470px
+		&:first-child
+			float: left
+		&:last-child
+			float: right
+
+	+max-screen(1014px)
+		&__col
+			width: 100%
+			margin-bottom: 15px
+			&:first-child,&:last-child
+				float: none
+
+		&__row
+			margin: 0 0 0
+

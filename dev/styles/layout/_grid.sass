@@ -1,0 +1,237 @@
+.cols
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+
+    &--right
+        justify-content: flex-end
+
+    &--around
+        justify-content: space-around
+
+    &--between
+        justify-content: space-between
+
+    &--gap-xs
+        margin-left: -5px
+        margin-right: -5px
+        .col
+            padding-left: 5px
+            padding-right: 5px
+
+    &--sm
+        margin-left: -10px
+        margin-right: -10px
+        .col
+            padding-left: 10px
+            padding-right: 10px
+
+    &--gap-md
+        margin-left: -15px
+        margin-right: -15px
+        .col
+            padding-left: 15px
+            padding-right: 15px
+
+    &--gap-lg
+        margin-left: -25px
+        margin-right: -25px
+        .col
+            padding-left: 25px
+            padding-right: 25px
+
+    &--v-gap-xs
+        .col
+            margin-bottom: 5px
+    &--v-gap-sm
+        .col
+            margin-bottom: 10px
+    &--v-gap-md
+        .col
+            margin-bottom: 15px
+    &--v-gap-lg
+        .col
+            margin-bottom: 25px
+
+.col
+    flex-shrink: 1
+    flex-grow: 0
+    display: flex
+    flex-direction: column
+    width: 100%
+
+    > *
+        flex-grow: 1
+        width: 100%
+
+    &--grow
+        flex-grow: 1
+
+    &--10
+        width: 10%
+    &--20
+        width: 20%
+    &--25
+        width: 25%
+    &--30
+        width: 30%
+    &--33
+        width: (100% / 3)
+    &--40
+        width: 40%
+    &--50
+        width: 50%
+    &--60
+        width: 60%
+    &--66
+        width: (100% / 3) * 2
+    &--70
+        width: 70%
+    &--75
+        width: 75%
+    &--80
+        width: 80%
+    &--90
+        width: 90%
+
+    +max-screen($screenMD)
+        &--lg-10
+            width: 10%
+        &--lg-20
+            width: 20%
+        &--lg-25
+            width: 25%
+        &--lg-30
+            width: 30%
+        &--lg-33
+            width: (100% / 3)
+        &--lg-40
+            width: 40%
+        &--lg-50
+            width: 50%
+        &--lg-60
+            width: 60%
+        &--lg-66
+            width: (100% / 3) * 2
+        &--lg-70
+            width: 70%
+        &--lg-75
+            width: 75%
+        &--lg-80
+            width: 80%
+        &--lg-90
+            width: 90%
+
+    +max-screen($screenMD_xs)
+        &--md-10
+            width: 10%
+        &--md-20
+            width: 20%
+        &--md-25
+            width: 25%
+        &--md-30
+            width: 30%
+        &--md-33
+            width: (100% / 3)
+        &--md-40
+            width: 40%
+        &--md-50
+            width: 50%
+        &--md-60
+            width: 60%
+        &--md-66
+            width: (100% / 3) * 2
+        &--md-70
+            width: 70%
+        &--md-75
+            width: 75%
+        &--md-80
+            width: 80%
+        &--md-90
+            width: 90%
+
+    +max-screen($screenSM)
+        &--sm-10
+            width: 10%
+        &--sm-20
+            width: 20%
+        &--sm-25
+            width: 25%
+        &--sm-30
+            width: 30%
+        &--sm-33
+            width: (100% / 3)
+        &--sm-40
+            width: 40%
+        &--sm-50
+            width: 50%
+        &--sm-60
+            width: 60%
+        &--sm-66
+            width: (100% / 3) * 2
+        &--sm-70
+            width: 70%
+        &--sm-75
+            width: 75%
+        &--sm-80
+            width: 80%
+        &--sm-90
+            width: 90%
+
+    +max-screen($screenXS_l)
+        &--xs-10
+            width: 10%
+        &--xs-20
+            width: 20%
+        &--xs-25
+            width: 25%
+        &--xs-30
+            width: 30%
+        &--xs-33
+            width: (100% / 3)
+        &--xs-40
+            width: 40%
+        &--xs-50
+            width: 50%
+        &--xs-60
+            width: 60%
+        &--xs-66
+            width: (100% / 3) * 2
+        &--xs-70
+            width: 70%
+        &--xs-75
+            width: 75%
+        &--xs-80
+            width: 80%
+        &--xs-90
+            width: 90%
+
+    +max-screen($screenXS_s)
+        &--xxs-10
+            width: 10%
+        &--xxs-20
+            width: 20%
+        &--xxs-25
+            width: 25%
+        &--xxs-30
+            width: 30%
+        &--xxs-33
+            width: (100% / 3)
+        &--xxs-40
+            width: 40%
+        &--xxs-50
+            width: 50%
+        &--xxs-60
+            width: 60%
+        &--xxs-66
+            width: (100% / 3) * 2
+        &--xxs-70
+            width: 70%
+        &--xxs-75
+            width: 75%
+        &--xxs-80
+            width: 80%
+        &--xxs-90
+            width: 90%
+
+

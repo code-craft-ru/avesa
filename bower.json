@@ -1,0 +1,26 @@
+{
+  "name": "webpack-gulp-starter",
+  "description": "My project package with modules support based on webpack",
+  "main": "index.js",
+  "authors": [
+    "CatLogic https://github.com/CatLogic"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "es6"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^4.1.1",
+    "slick-carousel": "^1.6.0",
+    "jquery-validation": "^1.16.0"
+  }
+}
