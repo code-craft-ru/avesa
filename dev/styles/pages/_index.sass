@@ -34,7 +34,19 @@
 
         &__title
             margin: 144px 0 0 0
-            h1
+
+    +max-screen($screenXS)
+        &__title
+            margin: 125px 0 0 0
+            padding: 0 15px
+            
+
+    +max-screen($screenXS_l)
+
+        &__btn
+            margin: 40px 0
+            .btn
+                font-size: 11px
 
         
 
@@ -48,7 +60,7 @@
         margin-top: 165px
 
     &__txt
-        width: 480px
+        width: 486px
         p
             margin-top: 75px
             letter-spacing: 0.4px
@@ -71,6 +83,21 @@
         .wrapper
             margin: 85px 0
             justify-content: center
+
+    +max-screen($screenXS_xl)
+        .wrapper
+            margin: 69px 0
+
+        &__txt
+            margin-top: 42px
+
+    +max-screen($screenXS_l)
+        .wrapper    
+            margin: 60px 0
+        &__txt
+            margin: 0
+            .p
+                margin-top: 25px
 
 
 .investments
@@ -96,14 +123,18 @@
         .desc
             font-size: 16px
             color: #6b6b6b 
-    
-    +max-screen($screenMD_xs)
-        padding: 0 0 60px
+
+    +max-screen($screenMD)
         .wrapper
             text-align: center
 
         .title--main
             display: inline-block
+    
+    +max-screen($screenMD_xs)
+        padding: 0 0 60px
+
+        .title--main
             margin: 60px 0 90px
 
         &__items
@@ -114,13 +145,19 @@
             width: 200px
             margin: 20px 
             text-align: center
+            .location
+                margin: 19px 0 10px
+
+    +max-screen($screenXS_l)
+        .title--main
+            margin: 60px 0 53px
 
 .prioritets
     @extend .cf
-    padding: 0 0 69px
+    padding: 0 0 73px
     .title--main
         color: #222222
-        margin: 145px 0 70px
+        margin: 148px 0 69px
 
     &__items
         display: flex
@@ -130,19 +167,23 @@
     &__item     
         text-align: left
         p
-            font-size: 16px
-            margin: 40px 0 0 0
+            font-size: 19px
+            margin: 28px 0 0 0
             font-weight: 100
             color: #6b6b6b 
             text-align: center
 
-    +max-screen($screenMD_xs)
-        padding: 0 0 37px
+    +max-screen($screenMD)
         .wrapper
             text-align: center
 
         .title--main
             display: inline-block
+
+    +max-screen($screenMD_xs)
+        padding: 0 0 37px
+
+        .title--main
             margin: 60px 0 32px
 
         &__items
@@ -154,6 +195,16 @@
             width: 200px
             margin: 20px 
             text-align: center
+
+    +max-screen($screenXS_l)
+        .title--main
+            margin: 60px 0 21px
+
+        &__items
+            margin: 43px 0 0 0
+
+
+
       
 .accordion
     &__wr
@@ -170,11 +221,11 @@
     background: url(../images/feedback.jpg) no-repeat center top
     background-size: cover
     &__title
-        margin: 122px 0 94px
+        margin: 120px 0 97px
         .title--main
-            margin: 0 0 66px
+            margin: 0 0 73px
         .sub
-            font-size: 32px
+            font-size: 33px
             color: #fff
             font-weight: 100
 
@@ -184,19 +235,37 @@
             width: 100%
             border-radius: 7px
 
-    +max-screen($screenMD_xs)
+    +max-screen($screenMD)
         .wrapper
             text-align: center
 
         .title--main
             display: inline-block
+
+    +max-screen($screenMD_xs)
+
+        .title--main
             margin: 60px 0 32px
 
         &__title
             margin: 28px 0 120px
             .sub
                 font-size: 26px
+
+        &__form
+            margin: 0 0 100px
     
     +max-screen(1014px)
         .btn--primary 
             margin-top: 14px  
+    
+    +max-screen($screenXS_xl)
+
+        .title--main
+            margin: 35px 0 38px
+
+        &__title
+            margin: 28px 0 70px
+
+        &__form
+            marign: 0 0 76px

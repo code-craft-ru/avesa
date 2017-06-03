@@ -7,7 +7,7 @@
 			font-size: 24px
 			color: $cCrimson
 			text-align: left
-			padding: 15px 0 15px 23px
+			padding: 15px 60px 15px 23px
 			transition: all 0.4s
 			cursor: pointer
 			border-radius: 5px
@@ -23,7 +23,7 @@
 
 	&__content
 		display: none
-		padding: 23px 29px 35px
+		padding: 25px 29px 31px
 		font-size: 20px
 		color: #222222
 		font-weight: normal
@@ -31,7 +31,9 @@
 		line-height: 34px
 		
 	&__item
+
 		&._open
+			margin-bottom: 29px
 			.accordion
 				&__title
 					&:hover
@@ -40,3 +42,13 @@
 						transform: rotate(180deg)
 				&__content
 					display: block
+
+.js-animate
+	visibility: hidden
+	&--do
+		visibility: visible
+
+	&-scroll
+		visibility: hidden
+		&--do
+			visibility: visible

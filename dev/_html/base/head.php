@@ -7,6 +7,7 @@ $links_url = str_replace('_html','',$links_url);
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Новый проект</title>
     <meta name="description" content="">
+    <link rel="shortcut icon" href="../images/fav_avesa.png">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 
     <!-- build:css ../css/styles.css -->
@@ -14,6 +15,7 @@ $links_url = str_replace('_html','',$links_url);
     <!-- bower:css-->
     <link rel="stylesheet" href="../../bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" href="../../bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="../../bower_components/animate.css/animate.css" />
     <!-- endbower-->
 
     <link rel="stylesheet" href="../css/styles.css">
