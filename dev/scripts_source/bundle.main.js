@@ -60,7 +60,7 @@ $.fn.scrollLink = function (pSettings) {
 (function (){
     var $scrollTrigger = $('.js-scroll-link');
     if (!$scrollTrigger.length) return;
-    $scrollTrigger.scrollLink();
+    $scrollTrigger.scrollLink({speed: 1000});
 })();
 
 
@@ -68,8 +68,32 @@ $(function(){
     var el = $('.js-accordion');
     if(!el.length) return;
 
+    require('jquery');
+
+    el.find('.js-accordion__item').each(function(){
+        var heightContent = $(this).find('.js-accordion__content-wr').outerHeight();
+        $(this).attr('data-height',heightContent);
+
+        if($(this).hasClass('_open')){
+            $(this).find('.js-accordion__content-wr').css({'height': heightContent + 'px'});
+        }else{
+            $(this).find('.js-accordion__content-wr').css({'height': 0 + 'px'});
+        }
+    });
+
     el.find('.js-accordion__item').on('click', function(){
-        $(this).toggleClass('_open');
+        var item = $(this);
+        var content = item.find('.js-accordion__content-wr');
+
+        if(item.hasClass('_open')){
+            item.removeClass('_open');
+            content.css({'height': 0});
+        }else{
+            item.addClass('_open');
+
+            content.css({'height': item.data().height + 'px'});
+        }
+
     });
 });
 
@@ -105,7 +129,7 @@ $(function(){
     var el = $('.js-animate-scroll');
     if(!el.length) return false
 
-    const windowHeight = window.innerHeight - ((window.innerHeight/100)*30);
+    const windowHeight = window.innerHeight - ((window.innerHeight/100)*0);
 
     function detectedMath(current){
         el.each(function(){
@@ -118,10 +142,12 @@ $(function(){
         })
     }
 
-    $(window).on('scroll' , function(){
-        var scrollTop = $('body').scrollTop();
+    $(window).on('scroll' , function(){                
+        var scrollTop = $(document).scrollTop();
         detectedMath(scrollTop);
-    })
+    });
+
+    $(window).trigger('scroll');
 });
 
 
@@ -133,7 +159,7 @@ $(function(){
     var items = el.find('.js-menu__item');
     
     $(window).on('scroll' ,function(){
-        var scrollTop = $('body').scrollTop() + $('.js-header').outerHeight() + 1,
+        var scrollTop = $(document).scrollTop() + $('.js-header').outerHeight() + 1,
             windowHeight = window.innerHeight;
 
         $('.section').each(function(){

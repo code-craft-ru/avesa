@@ -1,5 +1,10 @@
+.js-accordion__content-wr
+	overflow: hidden
+	transition: all 0.4s
+
 .accordion
 	overflow: hidden
+
 	&__title
 		position: relative
 		p
@@ -22,13 +27,15 @@
 			transition: all 0.4s
 
 	&__content
-		display: none
+		// display: none
 		padding: 25px 29px 31px
 		font-size: 20px
 		color: #222222
 		font-weight: normal
 		border-bottom: 1px solid $cCrimson
 		line-height: 34px
+		transition: all 0.4s
+
 		
 	&__item
 
@@ -41,7 +48,7 @@
 					.icon
 						transform: rotate(180deg)
 				&__content
-					display: block
+					// display: block
 
 .js-animate
 	visibility: hidden

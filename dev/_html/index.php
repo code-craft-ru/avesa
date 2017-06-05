@@ -91,8 +91,10 @@
                                 <p>How to apply?</p>
                                 <span class="icon icon--arr-b"></span>
                             </div>
-                            <div class="accordion__content">
-                                Please fill and send an application form. You can apply any time, there is no deadline. Each team should prepare a presentation sketching their business idea aand attach it to the application form.
+                            <div class="js-accordion__content-wr">
+                                <div class="accordion__content">
+                                    Please fill and send an application form. You can apply any time, there is no deadline. Each team should prepare a presentation sketching their business idea aand attach it to the application form.
+                                </div>                                
                             </div>
                         </div>
                         <div class="accordion__item js-accordion__item js-animate-scroll" data-animate='fadeInUp'>
@@ -100,8 +102,10 @@
                                 <p>Who can apply?</p>
                                 <span class="icon icon--arr-b"></span>
                             </div>
-                            <div class="accordion__content">
-                                Please fill and send an application form. You can apply any time, there is no deadline. Each team should prepare a presentation sketching their business idea aand attach it to the application form.
+                            <div class="js-accordion__content-wr">                                
+                                <div class="accordion__content">
+                                    Please fill and send an application form. You can apply any time, there is no deadline. Each team should prepare a presentation sketching their business idea aand attach it to the application form.
+                                </div>
                             </div>
                         </div>
                         <div class="accordion__item js-accordion__item js-animate-scroll" data-animate='fadeInUp'>
@@ -109,8 +113,10 @@
                                 <p>How are we making decision?</p>
                                 <span class="icon icon--arr-b"></span>
                             </div>
-                            <div class="accordion__content">
-                                Please fill and send an application form. You can apply any time, there is no deadline. Each team should prepare a presentation sketching their business idea aand attach it to the application form.
+                            <div class="js-accordion__content-wr">
+                                <div class="accordion__content">
+                                    Please fill and send an application form. You can apply any time, there is no deadline. Each team should prepare a presentation sketching their business idea aand attach it to the application form.
+                                </div>                                
                             </div>
                         </div>
                         <div class="accordion__item js-accordion__item js-animate-scroll" data-animate='fadeInUp'>
@@ -118,8 +124,10 @@
                                 <p>What we expect from your presentation?</p>
                                 <span class="icon icon--arr-b"></span>
                             </div>
-                            <div class="accordion__content">
-                                Please fill and send an application form. You can apply any time, there is no deadline. Each team should prepare a presentation sketching their business idea aand attach it to the application form.
+                            <div class="js-accordion__content-wr">
+                                <div class="accordion__content">
+                                    Please fill and send an application form. You can apply any time, there is no deadline. Each team should prepare a presentation sketching their business idea aand attach it to the application form.
+                                </div>                                
                             </div>
                         </div>
                         <div class="accordion__item js-accordion__item js-animate-scroll" data-animate='fadeInUp'>
@@ -127,8 +135,10 @@
                                 <p>What are our criteria?</p>
                                 <span class="icon icon--arr-b"></span>
                             </div>
-                            <div class="accordion__content">
-                                Please fill and send an application form. You can apply any time, there is no deadline. Each team should prepare a presentation sketching their business idea aand attach it to the application form.
+                            <div class="js-accordion__content-wr">
+                                <div class="accordion__content">
+                                    Please fill and send an application form. You can apply any time, there is no deadline. Each team should prepare a presentation sketching their business idea aand attach it to the application form.
+                                </div>
                             </div>
                         </div>
                     </div>
