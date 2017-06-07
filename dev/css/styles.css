@@ -142,12 +142,6 @@ IMG {
   position: relative;
   z-index: 1; }
 
-.page-body {
-  padding-top: 109px; }
-  @media screen and (max-width: 1060px) {
-    .page-body {
-      padding-top: 85px; } }
-
 .wrapper {
   position: relative;
   margin: 0 auto;
@@ -899,12 +893,12 @@ IMG {
       visibility: visible; }
 
 .screen1 {
-  height: 776px;
+  height: 884px;
   background: url(../images/ofice.jpg) no-repeat center top;
   overflow: hidden;
   background-size: cover; }
   .screen1__title {
-    margin: 286px 0 0;
+    margin: 394px 0 0;
     text-align: center; }
     .screen1__title h1 {
       color: #fff;
@@ -915,21 +909,21 @@ IMG {
     text-align: center; }
   @media screen and (max-width: 1060px) {
     .screen1 {
-      height: 570px; }
+      height: 655px; }
       .screen1__title {
-        margin: 208px 0 0 0; }
+        margin: 293px 0 0 0; }
         .screen1__title h1 {
           font-size: 32px; }
       .screen1__btn .btn {
         font-size: 14px; } }
   @media screen and (max-width: 600px) {
     .screen1 {
-      height: 450px; }
+      height: 530px; }
       .screen1__title {
-        margin: 144px 0 0 0; } }
+        margin: 229px 0 0 0; } }
   @media screen and (max-width: 480px) {
     .screen1__title {
-      margin: 125px 0 0 0;
+      margin: 203px 0 0 0;
       padding: 0 15px; } }
   @media screen and (max-width: 540px) {
     .screen1__btn {

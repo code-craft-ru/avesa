@@ -1,4 +1,4 @@
-<div class="header js-header">
+<div class="header js-header js-animate" data-animate='fadeIn'>
 	<div class="wrapper wrapper--148">
 		<div class="header__logo">
 			<a href="/">
